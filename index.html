@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Prac_Portfolio</title>
+</head>
+    <body>
+        <div class="homie">
+            <div class="header">
+                <button onclick="scrollToSection('home')">Home</button>
+                <button onclick="scrollToSection('bg-skill')">Skills</button>
+                <button onclick="scrollToSection('project')">Projects</button>
+                <button onclick="scrollToSection('aboutme')">About</button>
+            </div>
+                <div id="home" class="home">
+                    <div class="content-home">
+                        <h1>Hi, I'm Remyboy</h1>
+                        <h3>Aspiring Web Developer</h3>
+                        <p>Life's begin with the less operand</p>
+                        <button onclick="scrollToSection('contact')">Contact Me</button>
+                    </div>
+                    <div>
+                        <img class="avatar" src="images/remy_uniform.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+
+        <div id="bg-skill" class="bg-skill">
+                <div class="skill">
+                    <h1>TECHNICAL SKILLS</h1>
+                </div>
+            <div class="skillset">
+                <div>
+                    <img class="html" src="images/html.png" alt="">
+                </div>
+                <div>
+                    <img class="css" src="images/css.png" alt="">
+                </div>
+                <div>
+                    <img class="php" src="images/php.png" alt="">
+                </div>
+                <div>
+                    <img class="laravel" src="images/laravel.png" alt="">
+                </div>
+                <div>
+                    <img class="github" src="images/github.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="project" class="project">
+            <div class="project-header">
+                <h1>MY PROJECTS</h1>
+            </div>
+            <div class="project-flex">
+                <div class="project2">
+                        <img class="proj1" src="images/project1.webp" alt="">
+                        <div class="text">
+                            <h2>html</h2>
+                            <h2>css</h2>
+                            <h2>laravel</h2>
+                            <h2>php</h2>
+                        </div>
+                </div>
+                <div class="project2">
+                    <img class="proj2" src="images/project2.png" alt="">
+                    <div class="text">
+                        <h2>html</h2>
+                        <h2>css</h2>
+                        <h2>laravel</h2>
+                        <h2>php</h2>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+        <div id="aboutme" class="aboutme">
+            <div class="aboutme-header">
+                <h1>ABOUT ME</h1>
+            </div>
+            <div class="about-flex">
+                <div>
+                    <img class="aboutpic" src="images/remy_uniform.jpg" alt="">
+                </div>
+                <div class="about-intro">
+                    <h3> As a fresh and aspiring web developer graduate, I aim to create impactful digital
+                         experiences through innovative coding and design.</h3><br><br>
+                         <div class="tabs">
+                            <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+                            <label for="tab1" class="tabs__label">Education</label>
+                            <div class="tabs__content">
+                              <h2>Tertiary</h2>
+                              <h3>Bachelor of Science in Information Technology</h3>
+                              <h3>Camarines Sur Polytechnic Colleges (2019-2023)</h3>
+                              <h2>Secondary</h2>
+                              <h3>Accountancy Business and Management</h3>
+                              <h3>Nabua National High School (2013-2019)</h3>
+                              <h2>Primary</h2>
+                              <h3>La Purisima Elementary School (2005-2013)</h3>
+                            </div>
+                            <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+                            <label for="tab2" class="tabs__label">Personal Skills</label>
+                            <div class="tabs__content">
+                                <ul>
+                                    <li>Hard Working</li>
+                                    <li>Teachable</li>
+                                    <li>Adaptive</li>
+                                    <li>Resposible of task given</li>
+                                  </ul>
+                            </div>
+                          </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="contact">
+            <div class="contact-header">
+                <h1>
+                    CONTACT ME!
+                </h1>
+            </div>
+                <div class="contact-content">
+                    <img  src="images/fb.png" alt="">
+                    <h1>
+                        REMYBOY LAPASTURA
+                    </h1>
+                </div>
+                <div class="contact-content">
+                    <img  src="images/gmail.png" alt="">
+                    <h1>
+                        remyboylapastura1321@gmail.com
+                    </h1>
+                </div>
+                <div class="contact-content">
+                    <img  src="images/phone.png" alt="">
+                    <h1>
+                        09772312897
+                    </h1>
+                </div>
+                <div class="contact-content">
+                    <img  src="images/ig.png" alt="">
+                    <h1>
+                        itsmeblank
+                    </h1>
+                </div>
+        </div>
+
+
+
+         <!-- JavaScript for smooth scrolling -->
+  <script>
+    function scrollToSection(sectionId) {
+      $('html, body').animate({
+        scrollTop: $('#' + sectionId).offset().top
+      }, 800); // Adjust the speed as needed
+    }
+  </script>
+    </body>
+    
+</html>

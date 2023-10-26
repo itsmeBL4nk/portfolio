@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+}
+.header{
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    background-color: black;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+.header button{
+    font-size: 16px;
+    margin:20px;
+    padding: 10px;
+    width: 90px;
+    border: 1px solid #0d7754; 
+    background-color: transparent;
+    border-radius: 30%;
+    text-align: center;
+    color:rgb(247, 244, 240);
+    cursor: pointer;
+}
+.header button:hover{
+    background-color: #a1f8db;
+    color:rgb(27, 15, 11);
+}
+.homie {
+    background-color: black;
+    padding-bottom:120px ;
+}
+.content-home {
+    color:bisque;
+    margin-left: 200px;
+    margin-top:75px ;
+    margin-right:75px ;
+}
+.content-home h1{
+    font-size: 45px;
+    font-family: "Lucida Console", Monospace;
+    padding-bottom: 30px;
+    color:#0d7754;
+}
+.content-home h3{
+    font-size: 30px;
+    font-family: "Lucida Console", Monospace;
+    padding-bottom: 30px;
+}
+.content-home p{
+    font-size: 22px;
+    font-family: "Lucida Console", Monospace;
+    padding-bottom: 30px;
+}
+.content-home button{
+    font-size: 14px;
+    color:rgb(247, 244, 240);
+    border: 1px solid #0d7754; 
+    background-color: transparent;
+    text-align: center; 
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+}
+.content-home  button:hover{
+    background-color: #a1f8db;
+    color:rgb(27, 15, 11);
+}
+.home{
+    display: flex;
+}
+.avatar{
+    width: 380px;
+    margin-top:75px ;
+    margin-left: 100px;
+}
+.bg-skill {
+    background-color: rgb(5, 155, 122);
+    padding-bottom:260px ;
+}
+.skill {
+    text-align: center;
+    padding-top : 40px;  
+}
+.skillset{
+    display: flex;
+}
+.laravel{
+    width: 170px;
+    padding-right: 100px;
+    padding-top: 95px;
+}
+.html{
+    width: 190px;
+    padding-right: 100px;
+    padding-top: 95px;
+}
+.css{
+    width: 160px;
+    padding-right: 100px;
+    padding-top: 95px;
+}
+.php{
+    width: 170px;
+    padding-right: 100px;
+    padding-top: 95px;
+}
+.github{
+    width: 160px;
+    padding-right: 100px;
+    padding-top: 95px;
+}
+.project {
+    background-color: rgb(20, 223, 179);
+    padding-bottom:120px ;
+}
+.project-header {
+    text-align: center;
+    padding-top : 40px;  
+}
+.project-flex{
+    display: flex;
+    margin-left: 250px;
+}
+.proj1{
+    width: 400px;
+    height: 400px;
+    padding-right: 100px;
+    padding-top: 70px;
+}
+
+.project2{
+    position: relative;
+}
+.text{
+    opacity:0;
+    transition: 0.5;
+    position: absolute;
+    bottom:0;
+    display: flex;
+}
+
+.text h2{
+    font-size: 21px;
+    margin-left: 20px;
+    margin-bottom:25px;
+    background-color: rgb(202, 211, 240);
+    color:rgb(31, 22, 11);
+    width: 65px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.text:hover{
+    opacity:1;
+}
+.proj2{
+    width: 400px;
+    height: 400px;
+    padding-top: 70px;
+}
+.aboutme {
+    background-color: rgb(116, 240, 213);
+    padding-bottom:50px;
+}
+.aboutme-header {
+    text-align: center;
+    padding-top : 40px;  
+}
+.aboutpic{
+    width: 350px;
+    margin-left: 180px;
+    margin-top: 80px;
+}
+.about-flex{
+    display: flex;
+}
+.about-intro{
+    margin-left: 75px;
+    margin-top: 80px;
+    text-align: justify;
+    width: 500px;
+}
+.about-content{
+    display: flex;
+}
+.about-content h2{
+    font-size: 22px;
+}
+
+.about-content h3{
+    margin-left: 75px;
+    font-size: 22px;
+}
+.about-content h1{
+    margin-left: 75px;
+    font-size: 22px;
+}
+.contact {
+    background-color: rgb(175, 245, 230);
+    padding-bottom:150px;
+}
+.contact-header{
+    font-family: "Copperplate", Fantasy;
+    margin-left: 130px;
+    padding-top : 40px;  
+    font-size: 28px;
+    color: rgb(17, 17, 16);
+}
+.contact-content{
+    display: flex;
+}
+.contact-content img{
+    width: 65px;
+    margin-left: 130px;
+    padding-top : 40px;
+}
+.contact-content h1{
+    font-size: 24px;
+    padding-top : 65px;
+    margin-left: 50px;
+    font-family: "Lucida Console", Monospace;
+}
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    font-family: sans-serif;
+  }
+  
+  .tabs__label {
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .tabs__radio {
+    display: none;
+  }
+  
+  .tabs__content {
+    order: 1;
+    width: 100%;
+    border-bottom: 3px solid #070707;
+    line-height: 1.5;
+    font-size: 0.9em;
+    display: none;
+  }
+  
+  .tabs__radio:checked + .tabs__label {
+    font-weight: bold;
+    color: #ec2e6d;
+    border-bottom: 2px solid #1c77df;
+  }
+  
+  .tabs__radio:checked + .tabs__label + .tabs__content {
+    display: initial;
+  }
+  .tabs__content li{
+    font-size: 18px;
+  }
+
